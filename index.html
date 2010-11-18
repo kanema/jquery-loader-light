@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.Loader.unpack.js"></script>
+<script type="text/javascript">
+
+	(function( $ ) {
+	
+		$(window).ready( function() {
+		
+			$.loader({
+				name : '$.staticQuery',
+				url: 'jquery.staticQuery.min.js'
+			});
+			
+			/*
+			$.loader({
+				name : 'alert',
+				url: 'alert.js'
+			});
+			
+			$.loader({
+				name : '$.fn.slider',
+				url: 'jquery-slider.js'
+			});
+			*/
+			
+			$.staticQuery('p').fadeIn();
+			
+			/*
+			alert('a');
+			
+			$('p:first').slider();
+			*/
+		});
+	})( jQuery );
+
+</script>
+</head>
+<body>
+	<p style="display:none;" class="a">Test</p>
+	<p style="display:none;">Test</p>
+	<p style="display:none;">Test</p>
+</body>
+</html>
